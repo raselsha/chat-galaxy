@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Cardo', serif;
+    src: url('../fonts/Cardo/Cardo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'blagin';
+    src: url('../fonts/Balgin/Balgin\ Regular\ Sm\ Expanded.ttf');
+}
+
+.cardo {
+    font-family: 'Cardo', serif;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.blagin {
+    font-family: 'blagin';
+}
