@@ -33,3 +33,22 @@
 .blagin {
     font-family: 'blagin';
 }
+
+body {
+    background-image: url('../images/galaxy-bg.jpg');
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: cover;
+    background-color: transparent;
+    background-attachment: fixed;
+}
+
+.why-us {
+    background-image: url('../images/astronat.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-color: transparent;
+    background-attachment: scroll;
+    min-height: 500px;
+}
