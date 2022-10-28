@@ -1,21 +1,26 @@
 @font-face {
     font-family: 'Cardo', serif;
-    src: url('../fonts/Cardo/Cardo-Regular.ttf');
+    src: url('../fonts/cardo-regular.woff2');
 }
 
 @font-face {
     font-family: 'Open Sans', sans-serif;
-    src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+    src: url('../fonts/open-sans.woff2');
 }
 
 @font-face {
     font-family: 'Poppins', sans-serif;
-    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+    src: url('../fonts/poppins.woff2');
 }
 
 @font-face {
-    font-family: 'blagin';
-    src: url('../fonts/Balgin/Balgin\ Regular\ Sm\ Expanded.ttf');
+    font-family: 'balgin';
+    src: url('../fonts/balgin.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .cardo {
@@ -30,8 +35,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.blagin {
-    font-family: 'blagin';
+.balgin {
+    font-family: 'Balgin';
 }
 
 body {
@@ -51,4 +56,157 @@ body {
     background-color: transparent;
     background-attachment: scroll;
     min-height: 500px;
+}
+
+.container {
+    width: 1240px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 20px;
+}
+
+.logo-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 346px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+/* #6d5b91 */
+
+.logo p {
+    font-family: 'Balgin';
+    font-size: 34px;
+    position: absolute;
+    color: #6d5b91;
+    line-height: 0;
+}
+
+.logo p:first-child {
+    top: 0;
+    left: 0;
+}
+
+.logo p:last-child {
+    bottom: 33px;
+    right: 0;
+}
+
+.logo h1 {
+    font-family: 'poppins';
+    font-size: 60px;
+    color: transparent;
+}
+
+.mask-logo {
+    -webkit-mask-image: url(../images/logo.svg);
+    mask-image: url(../images/logo.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    width: 210px;
+    height: 40px;
+}
+
+.devider {
+    margin: auto;
+    height: 2px;
+    width: 100%;
+    background-color: #6d5b91;
+    position: relative;
+}
+
+.devider::before {
+    content: '';
+    padding: 4px;
+    background-image: url(../images/circle.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -6px;
+    top: -3px;
+}
+
+.devider::after {
+    content: '';
+    padding: 4px;
+    background-image: url(../images/circle.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -6px;
+    top: -3px;
+}
+
+
+/* ========================login========================== */
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__image {
+    width: 40%;
+}
+
+.login__form {
+    width: 300px
+}
+
+.login__form form {
+    padding: 30px 0;
+}
+
+.login__form input {
+    border-radius: 30px;
+    background-color: #6d5b91;
+    width: 200px;
+    padding: 10px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.login__form p {
+    font-family: 'poppins';
+}
+
+.login__form h2 {
+    font-family: 'balgin';
+    color: #6d5b91;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
