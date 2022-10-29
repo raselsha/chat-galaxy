@@ -1,212 +1,330 @@
 @font-face {
-    font-family: 'Cardo', serif;
-    src: url('../fonts/cardo-regular.woff2');
+  font-family: "Cardo", serif;
+  src: url("../fonts/Cardo/Cardo-Regular.ttf");
 }
-
 @font-face {
-    font-family: 'Open Sans', sans-serif;
-    src: url('../fonts/open-sans.woff2');
+  font-family: "Open Sans", sans-serif;
+  src: url("../fonts/open-sans.woff2");
 }
-
 @font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url('../fonts/poppins.woff2');
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/poppins.woff2");
 }
-
 @font-face {
-    font-family: 'balgin';
-    src: url('../fonts/balgin.woff2');
+  font-family: "balgin";
+  src: url("../fonts/balgin.woff2");
 }
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .cardo {
-    font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 .open-sans {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .poppins {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .balgin {
-    font-family: 'Balgin';
+  font-family: "Balgin";
 }
 
 body {
-    background-image: url('../images/galaxy-bg.jpg');
-    background-repeat: repeat-y;
-    background-position: top center;
-    background-size: cover;
-    background-color: transparent;
-    background-attachment: fixed;
-}
-
-.why-us {
-    background-image: url('../images/astronat.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    background-color: transparent;
-    background-attachment: scroll;
-    min-height: 500px;
+  background-image: url("../images/galaxy-bg.jpg");
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: cover;
+  background-color: transparent;
+  background-attachment: fixed;
 }
 
 .container {
-    width: 1240px;
-    padding: 20px;
-    margin: 0 auto;
-    position: relative;
+  width: 1240px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .bg-white {
-    background-color: #fff;
+  background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #333;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-start {
-    text-align: left;
+  text-align: left;
 }
 
 .text-end {
-    text-align: right;
-}
-
-.menu-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    padding: 20px;
-}
-
-.logo-area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.logo {
-    width: 346px;
-    height: 80px;
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-}
-
-
-/* #6d5b91 */
-
-.logo p {
-    font-family: 'Balgin';
-    font-size: 34px;
-    position: absolute;
-    color: #6d5b91;
-    line-height: 0;
-}
-
-.logo p:first-child {
-    top: 0;
-    left: 0;
-}
-
-.logo p:last-child {
-    bottom: 33px;
-    right: 0;
-}
-
-.logo h1 {
-    font-family: 'poppins';
-    font-size: 60px;
-    color: transparent;
-}
-
-.mask-logo {
-    -webkit-mask-image: url(../images/logo.svg);
-    mask-image: url(../images/logo.svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    width: 210px;
-    height: 40px;
+  text-align: right;
 }
 
 .devider {
-    margin: auto;
-    height: 2px;
-    width: 100%;
-    background-color: #6d5b91;
-    position: relative;
+  margin: auto;
+  height: 2px;
+  width: 100%;
+  background-color: #6d5b91;
+  position: relative;
 }
 
 .devider::before {
-    content: '';
-    padding: 4px;
-    background-image: url(../images/circle.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -6px;
-    top: -3px;
+  content: "";
+  padding: 4px;
+  background-image: url(../images/circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -6px;
+  top: -3px;
 }
 
 .devider::after {
-    content: '';
-    padding: 4px;
-    background-image: url(../images/circle.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -6px;
-    top: -3px;
+  content: "";
+  padding: 4px;
+  background-image: url(../images/circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -6px;
+  top: -3px;
 }
 
+.header .menu-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 20px;
+}
+.header .logo-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header .logo {
+  width: 346px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.header .logo p {
+  font-family: "Balgin";
+  font-size: 34px;
+  position: absolute;
+  color: #6d5b91;
+  line-height: 0;
+}
+.header .logo p:first-child {
+  top: 0;
+  left: 0;
+}
+.header .logo p:last-child {
+  bottom: 33px;
+  right: 0;
+}
+.header .logo h1 {
+  font-family: "poppins";
+  font-size: 60px;
+  color: transparent;
+}
+.header .mask-logo {
+  -webkit-mask-image: url(../images/logo.svg);
+  mask-image: url(../images/logo.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 210px;
+  height: 40px;
+}
 
 /* ========================login========================== */
-
 .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 110px center;
+  background-size: 300px;
+}
+.login .login__image {
+  width: 40%;
+}
+.login .login__form {
+  width: 300px;
+  padding: 30px 0;
+}
+.login .login__form form {
+  padding: 10px 0;
+}
+.login .login__form form input {
+  border-radius: 30px;
+  background-color: #6d5b91;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  margin-bottom: 20px;
+}
+.login .login__form p {
+  font-family: "poppins";
+  font-size: 16px;
+  color: #6d5b91;
+}
+.login .login__form h2 {
+  font-family: "balgin";
+  color: #6d5b91;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.login .login__form .guest-button {
+  margin-top: 30px;
 }
 
-.login__image {
-    width: 40%;
+.forgot-password {
+  padding: 50px 0;
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.forgot-password p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+.forgot-password p::before {
+  content: "";
+  background-image: url(../images/lock-key.svg);
+  padding: 15px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -5px;
+  left: -10px;
 }
 
-.login__form {
-    width: 300px
+.map-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: start;
+  padding: 50px;
+}
+.map-area .map {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: start;
+}
+.map-area .map .image {
+  width: 50%;
+}
+.map-area .map .image img {
+  width: 100%;
+}
+.map-area .map .content {
+  width: 50%;
+}
+.map-area .map .content h2 {
+  font-family: "balgin";
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+}
+.map-area .map .content p {
+  margin-top: 50px;
+  font-family: "Cardo", serif;
+  line-height: 30px;
+  font-size: 18px;
+  color: #333;
 }
 
-.login__form form {
-    padding: 30px 0;
+.map-devider {
+  padding: 70px 0;
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  padding-bottom: 70px;
 }
 
-.login__form input {
-    border-radius: 30px;
-    background-color: #6d5b91;
-    width: 200px;
-    padding: 10px;
-    border: 0;
-    margin-bottom: 20px;
+.why-us-section {
+  padding: 50px;
+  padding: 50px 0;
+  background-image: url("../images/bg-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 400px;
+  background-color: #fff;
+  position: relative;
+  min-height: 500px;
+}
+.why-us-section h2 {
+  font-family: "balgin";
+  margin: 20px;
+}
+.why-us-section .why-us-bg {
+  position: absolute;
+  top: 30px;
+  left: 28%;
+  margin: auto;
+}
+.why-us-section .why-us-bg img {
+  width: 70%;
+}
+.why-us-section .why-us {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+.why-us-section .why-us .col-4 {
+  width: 33%;
+}
+.why-us-section .why-us .col-4 p {
+  font-family: "Cardo";
+  line-height: 30px;
+}
+.why-us-section .why-us .col-4 img {
+  width: 100%;
 }
 
-.login__form p {
-    font-family: 'poppins';
+.galaxy {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 70px;
+}
+.galaxy .image {
+  width: 50%;
+}
+.galaxy .content {
+  width: 50%;
+}
+.galaxy .content p {
+  margin-top: 50px;
 }
 
-.login__form h2 {
-    font-family: 'balgin';
-    color: #6d5b91;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Cardo";
+}/*# sourceMappingURL=style.css.map */
