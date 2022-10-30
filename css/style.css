@@ -1,38 +1,23 @@
 @font-face {
-  font-family: "Cardo", serif;
-  src: url("../fonts/Cardo/Cardo-Regular.ttf");
+  font-family: "Cardo";
+  src: url("../fonts/Cardo.woff2");
 }
 @font-face {
   font-family: "Open Sans", sans-serif;
-  src: url("../fonts/open-sans.woff2");
+  src: url("../fonts/Open-sans.woff2");
 }
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("../fonts/poppins.woff2");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
 }
 @font-face {
-  font-family: "balgin";
-  src: url("../fonts/balgin.woff2");
+  font-family: "Balgin";
+  src: url("../fonts/Balgin.woff2");
 }
 * {
   margin: 0;
   padding: 0;
-}
-
-.cardo {
-  font-family: "Cardo", serif;
-}
-
-.open-sans {
-  font-family: "Open Sans", sans-serif;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
-
-.balgin {
-  font-family: "Balgin";
+  box-sizing: border-box;
 }
 
 body {
@@ -49,6 +34,11 @@ body {
   padding: 20px;
   margin: 0 auto;
   position: relative;
+}
+@media (max-width: 1239px) {
+  .container {
+    width: 100%;
+  }
 }
 
 .bg-white {
@@ -75,28 +65,80 @@ body {
   margin: auto;
   height: 2px;
   width: 100%;
-  background-color: #6d5b91;
+  background-color: #382a40;
   position: relative;
 }
 
 .devider::before {
   content: "";
-  padding: 4px;
-  background-image: url(../images/circle.svg);
-  background-repeat: no-repeat;
+  padding: 2px;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #382a40;
+  border-radius: 50%;
   position: absolute;
-  left: -6px;
-  top: -3px;
+  left: -8px;
+  top: -4px;
 }
 
 .devider::after {
   content: "";
-  padding: 4px;
-  background-image: url(../images/circle.svg);
-  background-repeat: no-repeat;
+  padding: 2px;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #382a40;
+  border-radius: 50%;
   position: absolute;
-  right: -6px;
-  top: -3px;
+  right: -8px;
+  top: -4px;
+}
+
+.devider-white {
+  margin: auto;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.devider-white::before {
+  content: "";
+  padding: 2px;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: -4px;
+}
+
+.devider-white::after {
+  content: "";
+  padding: 2px;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+}
+
+h2 {
+  font-family: "balgin";
+  color: #6d5b91;
+  font-size: 25px;
+  line-height: 36px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: "Cardo";
+  line-height: 26.2333px;
+  font-size: 18.741px;
+  color: #333;
+  font-weight: 400;
 }
 
 .header .menu-icon {
@@ -105,6 +147,12 @@ body {
   left: 0;
   display: block;
   padding: 20px;
+  z-index: 2;
+}
+@media (max-width: 540px) {
+  .header .menu-icon {
+    left: 77%;
+  }
 }
 .header .logo-area {
   display: flex;
@@ -123,31 +171,30 @@ body {
 }
 .header .logo p {
   font-family: "Balgin";
-  font-size: 34px;
+  font-size: 30px;
   position: absolute;
   color: #6d5b91;
   line-height: 0;
 }
 .header .logo p:first-child {
-  top: 0;
+  top: 3px;
   left: 0;
 }
 .header .logo p:last-child {
-  bottom: 33px;
-  right: 0;
-}
-.header .logo h1 {
-  font-family: "poppins";
-  font-size: 60px;
-  color: transparent;
+  bottom: 23px;
+  right: 10px;
+  font-size: 20px;
 }
 .header .mask-logo {
   -webkit-mask-image: url(../images/logo.svg);
   mask-image: url(../images/logo.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  width: 210px;
-  height: 40px;
+  width: 270px;
+  height: 44px;
+}
+.header .mask-logo img {
+  width: 380px;
 }
 
 /* ========================login========================== */
@@ -155,19 +202,44 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-repeat: no-repeat;
-  background-position: 110px center;
-  background-size: 300px;
+  flex-direction: row;
+  padding: 2% 0;
+}
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+  }
+}
+.login .col-4 {
+  width: 33%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .login .col-4 {
+    width: 100%;
+  }
 }
 .login .login__image {
-  width: 40%;
+  width: 280px;
+  margin: auto;
+  text-align: center;
 }
 .login .login__form {
-  width: 300px;
+  width: 250px;
+  margin: auto;
   padding: 30px 0;
 }
 .login .login__form form {
   padding: 10px 0;
+}
+.login .login__form form label {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #6d5b91;
+  display: block;
+}
+.login .login__form form .input-group {
+  margin: 15px 0;
 }
 .login .login__form form input {
   border-radius: 30px;
@@ -175,29 +247,17 @@ body {
   width: 100%;
   padding: 10px;
   border: 0;
-  margin-bottom: 20px;
-}
-.login .login__form p {
-  font-family: "poppins";
-  font-size: 16px;
-  color: #6d5b91;
-}
-.login .login__form h2 {
-  font-family: "balgin";
-  color: #6d5b91;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-.login .login__form .guest-button {
-  margin-top: 30px;
+  margin: 5px 0;
 }
 
 .forgot-password {
-  padding: 50px 0;
+  padding-top: 10px;
+  padding-bottom: 40px;
   background-image: url("../images/galaxy.jpg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
+  background-attachment: fixed;
 }
 .forgot-password p {
   color: #fff;
@@ -219,112 +279,262 @@ body {
   left: -10px;
 }
 
-.map-area {
+.map-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   align-items: start;
-  padding: 50px;
+  padding: 60px 0;
 }
-.map-area .map {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: start;
+.map-section .map {
+  width: 50%;
+  margin: 70px auto;
 }
-.map-area .map .image {
+@media (max-width: 768px) {
+  .map-section .map {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.map-section .map .image {
+  -webkit-mask-image: url(../images/map.svg);
+  mask-image: url(../images/map.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 620px;
+  height: 315px;
+}
+.map-section .map .image img {
+  width: 1000px;
+  transform: translateX(-200px);
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    width: 1000px;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    width: 1000px;
+  }
+}
+.map-section .content {
   width: 50%;
 }
-.map-area .map .image img {
-  width: 100%;
+@media (max-width: 768px) {
+  .map-section .content {
+    flex-direction: column;
+    width: 100%;
+  }
 }
-.map-area .map .content {
-  width: 50%;
+.map-section .content .text {
+  padding: 70px;
+  margin-top: 30px;
 }
-.map-area .map .content h2 {
-  font-family: "balgin";
-  font-size: 20px;
-  text-align: center;
+.map-section .content .text p {
+  margin-bottom: 10px;
+  font-family: "Cardo";
+  line-height: 26.2333px;
+  font-size: 18.741px;
   color: #333;
-}
-.map-area .map .content p {
-  margin-top: 50px;
-  font-family: "Cardo", serif;
-  line-height: 30px;
-  font-size: 18px;
-  color: #333;
+  font-weight: 400;
 }
 
 .map-devider {
   padding: 70px 0;
   background-image: url("../images/galaxy.jpg");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center right;
   background-size: cover;
   padding-bottom: 70px;
+  background-attachment: fixed;
 }
 
 .why-us-section {
-  padding: 50px;
-  padding: 50px 0;
-  background-image: url("../images/bg-1.png");
+  padding: 60px 0;
+  background-image: url("../images/char-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 400px;
+  background-size: contain;
   background-color: #fff;
-  position: relative;
-  min-height: 500px;
 }
 .why-us-section h2 {
-  font-family: "balgin";
-  margin: 20px;
-}
-.why-us-section .why-us-bg {
-  position: absolute;
-  top: 30px;
-  left: 28%;
-  margin: auto;
-}
-.why-us-section .why-us-bg img {
-  width: 70%;
+  color: #333;
 }
 .why-us-section .why-us {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  margin-top: 50px;
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  .why-us-section .why-us {
+    flex-direction: column;
+  }
 }
 .why-us-section .why-us .col-4 {
   width: 33%;
 }
-.why-us-section .why-us .col-4 p {
-  font-family: "Cardo";
-  line-height: 30px;
+@media (max-width: 768px) {
+  .why-us-section .why-us .col-4 {
+    width: 100%;
+  }
 }
-.why-us-section .why-us .col-4 img {
+.why-us-section .why-us .col-4.image img {
   width: 100%;
+  -webkit-animation: upNdown 8s ease-in-out infinite;
+          animation: upNdown 8s ease-in-out infinite;
+}
+@-webkit-keyframes upNdown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes upNdown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.why-us-section .why-us .col-4 p {
+  padding: 40px 20px;
+  font-family: "Cardo";
+  line-height: 26.2333px;
+  font-size: 18.741px;
+  color: #333;
+  font-weight: 400;
+}
+
+.why-us-devider {
+  padding: 70px 0;
+  background-image: url("../images/galaxy-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  padding-bottom: 70px;
+  background-attachment: fixed;
 }
 
 .galaxy {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
-  align-items: center;
-  padding: 70px;
+  align-items: start;
+  padding: 60px 0;
 }
-.galaxy .image {
+.galaxy .panet {
   width: 50%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .galaxy .panet {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.galaxy .panet .image {
+  margin: auto;
+  margin-top: 40px;
+  -webkit-mask-image: url(../images/planet-musk.svg);
+  mask-image: url(../images/planet-musk.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+}
+.galaxy .panet .image img {
+  width: 400px;
+  height: 400px;
+  -webkit-animation: rotatation 120s linear infinite;
+          animation: rotatation 120s linear infinite;
+}
+@-webkit-keyframes rotatation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotatation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.galaxy .panet .overlay {
+  background-image: url(../images/planet.svg);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 33px;
+  left: 8px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
 }
 .galaxy .content {
   width: 50%;
 }
-.galaxy .content p {
-  margin-top: 50px;
+@media (max-width: 768px) {
+  .galaxy .content {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.galaxy .content .text {
+  padding: 70px;
+  margin-top: 30px;
+}
+.galaxy .content .text p {
+  margin-bottom: 10px;
+  font-family: "Cardo";
+  line-height: 26.2333px;
+  font-size: 18.741px;
+  color: #333;
+  font-weight: 400;
 }
 
-footer a {
+footer {
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+footer .footer .col-4 {
+  width: 33%;
+}
+footer .footer p {
+  font-family: "Cardo";
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+}
+footer .footer a {
+  padding: 10px 15px;
+  font-size: 14px;
   color: #fff;
   text-decoration: none;
-  font-family: "Cardo";
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
