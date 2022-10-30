@@ -21,9 +21,9 @@
 }
 
 body {
-  background-image: url("../images/galaxy-bg.jpg");
+  background-image: url("../images/galaxy.jpg");
   background-repeat: repeat-y;
-  background-position: top center;
+  background-position: center top;
   background-size: cover;
   background-color: transparent;
   background-attachment: fixed;
@@ -141,6 +141,11 @@ p {
   font-weight: 400;
 }
 
+.title {
+  width: 380px;
+  margin: auto;
+}
+
 .header .menu-icon {
   position: absolute;
   top: 0;
@@ -224,6 +229,12 @@ p {
   width: 238px;
   margin: auto;
   text-align: center;
+  margin-top: -90px;
+}
+@media (max-width: 768px) {
+  .login .login__image {
+    margin-top: 0px;
+  }
 }
 .login .login__image img {
   width: 100%;
@@ -257,11 +268,6 @@ p {
 .forgot-password {
   padding-top: 10px;
   padding-bottom: 40px;
-  background-image: url("../images/galaxy.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 .forgot-password p {
   color: #fff;
@@ -357,11 +363,6 @@ p {
 
 .map-devider {
   height: 150px;
-  background-image: url("../images/galaxy.jpg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .why-us-section {
@@ -438,11 +439,6 @@ p {
 
 .why-us-devider {
   height: 150px;
-  background-image: url("../images/galaxy-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .galaxy {
@@ -517,13 +513,6 @@ p {
   font-weight: 400;
 }
 
-footer {
-  background-image: url("../images/galaxy.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-}
 footer .footer {
   display: flex;
   justify-content: space-around;

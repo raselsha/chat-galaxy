@@ -25,9 +25,9 @@
                     }
                     
                     body {
-                        background-image: url('../images/galaxy-bg.jpg');
+                        background-image: url('../images/galaxy.jpg');
                         background-repeat: repeat-y;
-                        background-position: top center;
+                        background-position: center top;
                         background-size: cover;
                         background-color: transparent;
                         background-attachment: fixed;
@@ -149,6 +149,11 @@
                         font-weight: 400;
                     }
                     
+                    .title {
+                        width: 380px;
+                        margin: auto;
+                    }
+                    
                     // =========================header==============
                     .header {
                         .menu-icon {
@@ -228,6 +233,10 @@
                             width: 238px;
                             margin: auto;
                             text-align: center;
+                            margin-top: -90px;
+                            @media (max-width: 768px) {
+                                margin-top: 0px;
+                            }
                             img {
                                 width: 100%;
                             }
@@ -262,11 +271,11 @@
                     .forgot-password {
                         padding-top: 10px;
                         padding-bottom: 40px;
-                        background-image: url('../images/galaxy.jpg');
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: cover;
-                        background-attachment: fixed;
+                        // background-image: url('../images/galaxy.jpg');
+                        // background-repeat: no-repeat;
+                        // background-position: center;
+                        // background-size: cover;
+                        // background-attachment: fixed;
                         p {
                             color: $white;
                             font-family: 'Open Sans', sans-serif;
@@ -354,11 +363,11 @@
                     
                     .map-devider {
                         height: 150px;
-                        background-image: url('../images/galaxy.jpg');
-                        background-repeat: no-repeat;
-                        background-position: center right;
-                        background-size: cover;
-                        background-attachment: fixed;
+                        // background-image: url('../images/galaxy.jpg');
+                        // background-repeat: no-repeat;
+                        // background-position: center right;
+                        // background-size: cover;
+                        // background-attachment: fixed;
                     }
                     
                     // ===================================why us============================
@@ -420,11 +429,11 @@
                     
                     .why-us-devider {
                         height: 150px;
-                        background-image: url('../images/galaxy-bg.jpg');
-                        background-repeat: no-repeat;
-                        background-position: center bottom;
-                        background-size: cover;
-                        background-attachment: fixed;
+                        // background-image: url('../images/galaxy.jpg');
+                        // background-repeat: no-repeat;
+                        // background-position: center bottom;
+                        // background-size: cover;
+                        // background-attachment: fixed;
                     }
                     
                     // ==========================galaxy=============================
@@ -508,11 +517,11 @@
                     
                     // ==================footer===================
                     footer {
-                        background-image: url('../images/galaxy.jpg');
-                        background-repeat: no-repeat;
-                        background-position: center top;
-                        background-size: cover;
-                        background-attachment: fixed;
+                        // background-image: url('../images/galaxy.jpg');
+                        // background-repeat: no-repeat;
+                        // background-position: center top;
+                        // background-size: cover;
+                        // background-attachment: fixed;
                         .footer {
                             display: flex;
                             justify-content: space-around;
