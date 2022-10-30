@@ -310,8 +310,8 @@ p {
 .map-section .map .image img {
   width: 1000px;
   transform: translateX(-200px);
-  -webkit-animation: spin 4s linear infinite;
-          animation: spin 4s linear infinite;
+  -webkit-animation: spin 24s linear infinite;
+          animation: spin 24s linear infinite;
 }
 @-webkit-keyframes spin {
   100% {
