@@ -158,6 +158,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .header .logo {
   width: 346px;
@@ -194,7 +195,7 @@ p {
   height: 44px;
 }
 .header .mask-logo img {
-  width: 380px;
+  width: 260px;
 }
 
 /* ========================login========================== */
@@ -399,6 +400,11 @@ p {
   -webkit-animation: upNdown 8s ease-in-out infinite;
           animation: upNdown 8s ease-in-out infinite;
 }
+@media (max-width: 768px) {
+  .why-us-section .why-us .col-4.image img {
+    padding: 20px;
+  }
+}
 @-webkit-keyframes upNdown {
   0% {
     transform: translateY(0px);
@@ -525,16 +531,36 @@ footer .footer {
   align-items: center;
   padding: 15px;
 }
+@media (max-width: 768px) {
+  footer .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 footer .footer .col-4 {
   width: 33%;
+  color: #fff;
+  text-align: center;
 }
-footer .footer p {
+@media (max-width: 768px) {
+  footer .footer .col-4 {
+    width: 100%;
+  }
+}
+footer .footer .col-4 .link {
   font-family: "Cardo";
   font-size: 14px;
   line-height: 26px;
   color: #fff;
+  text-align: right;
 }
-footer .footer a {
+@media (max-width: 768px) {
+  footer .footer .col-4 .link {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+footer .footer .col-4 .link a {
   padding: 10px 15px;
   font-size: 14px;
   color: #fff;
