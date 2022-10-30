@@ -220,9 +220,12 @@ p {
   }
 }
 .login .login__image {
-  width: 280px;
+  width: 300px;
   margin: auto;
   text-align: center;
+}
+.login .login__image img {
+  width: 100%;
 }
 .login .login__form {
   width: 250px;

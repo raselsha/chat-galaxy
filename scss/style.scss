@@ -226,9 +226,12 @@ p {
         }
     }
     .login__image {
-        width: 280px;
+        width: 300px;
         margin: auto;
         text-align: center;
+        img {
+            width: 100%;
+        }
     }
     .login__form {
         width: 250px;
